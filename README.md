@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# 🔤 SpeakDev — AI-Powered English Learning for Developers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An interactive learning platform engineered to help software developers master technical English, developer vocabulary, and real-world workplace scenarios.
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-green?style=flat-square&logo=supabase)](https://supabase.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+SpeakDev is a modern full-stack web application tailored specifically for tech professionals seeking to enhance their professional communication. The platform offers contextualized vocabulary modules, technical dialogue practice, and interactive exercises focused on tech industry terminology (code reviews, standups, and architectural discussions).
 
-## Expanding the ESLint configuration
+Built with a **Security-First Architecture**, the platform utilizes **PostgreSQL Row Level Security (RLS)** via **Supabase** for secure user authentication, progress tracking, and complete data isolation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Technical Vocabulary Modules:** Practical flashcards and lessons centered around software development terminology.
+- **Interactive Scenarios:** Simulated workplace situations (agile standups, pull request reviews, system design meetings).
+- **Gamified Progress Tracking:** Streak counters, completed lessons, and personal progress analytics.
+- **Audio & Pronunciation Aids:** Integrated voice support for natural pronunciation feedback.
+- **Dark Mode Tailored UI:** Clean, distraction-free interface built with Tailwind CSS.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend:** React, TypeScript, Tailwind CSS, Vite
+- **Backend & Database:** Supabase, PostgreSQL (Row Level Security enabled)
+- **DevOps & Tooling:** Git, Vercel
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/gabi-gasparini/speakdev.git](https://github.com/gabi-gasparini/speakdev.git)
+   cd speakdev
