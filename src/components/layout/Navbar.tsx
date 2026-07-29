@@ -6,6 +6,7 @@ const navItems = [
   { to: '/', label: 'Home' },
   { to: '/everyday', label: 'Everyday', accent: 'everyday' as const },
   { to: '/tech', label: 'Tech', accent: 'tech' as const },
+  { to: '/writing', label: 'Writing' },
   { to: '/dashboard', label: 'Dashboard' },
 ]
 
@@ -49,13 +50,10 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          {/* Indicador de streak real, vindo do progresso do usuário */}
           <div className="flex items-center gap-1 rounded-full border-2 border-streak bg-streak/10 px-3 py-1.5">
             <span className="text-base">🔥</span>
             <span className="text-sm font-extrabold text-text-primary">{dayStreak}</span>
           </div>
-
-          {/* Avatar do usuário */}
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-accent-everyday text-sm font-extrabold text-white">
             G
           </div>

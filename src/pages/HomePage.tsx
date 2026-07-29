@@ -1,4 +1,3 @@
-import { MascotRoom } from '@/components/common/MascotRoom'
 import { MiniStatBadge } from '@/components/dashboard/MiniStatBadge'
 import { TrackCard } from '@/components/dashboard/TrackCard'
 import { DailyGoalCard } from '@/components/dashboard/DailyGoalCard'
@@ -45,8 +44,6 @@ export function HomePage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <MascotRoom />
-
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-extrabold">Welcome back, Gabi! 👋</h1>

@@ -3,6 +3,7 @@ import { AppShell } from './components/layout/AppShell'
 import { HomePage } from './pages/HomePage'
 import { EverydayPage } from './pages/EverydayPage'
 import { TechPage } from './pages/TechPage'
+import { WritingPage } from './pages/WritingPage'
 import { DashboardPage } from './pages/DashboardPage'
 import { useAutoLogin } from './hooks/useAutoLogin'
 import { Mascot } from './components/common/Mascot'
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/everyday" element={<EverydayPage />} />
         <Route path="/tech" element={<TechPage />} />
+        <Route path="/writing" element={<WritingPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </AppShell>
